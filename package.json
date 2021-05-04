@@ -1,13 +1,13 @@
 {
-    "name": "quiz_quest",
+    "name": "quizquest",
     "version": "1.0.0",
-    "description": "A location-based game that inspires players to explore and learn about new locales through engaging quizzes and community oriented features.",
+    "description": "A location-based game that inspires players to learn about various landmarks through engaging quizzes and community oriented features.",
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
         "dev": "nodemon index.js"
     },
-    "author": "CS 440 Group 8",
+    "author": "JRapt0r",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^5.0.0",
