@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include("../components/head.ejs"); %>
+</head>
+
+<style>
+
+  body {
+    background-color: black !important;
+    background-image: none;
+  }
+
+  #lead-jumbotron {
+    /* background-image: url(https://i.imgur.com/VwONI7h.jpg); */
+    background-image: url(https://i.imgur.com/6UeNx8G.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0px;
+
+    min-height: calc(100vh - 59.5px);
+  }
+
+  #attention {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.45) 50%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0px !important;
+    min-height: calc(100vh - 59.5px);
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    #lead-jumbotron {
+      min-height: calc(100vh - 63.5px);
+    }
+
+    #attention {
+      min-height: calc(100vh - 63.5px);
+    }
+  }
+</style>
+
+<body>
+
+  <%- include("../components/navbar.ejs"); %>
+
+    <div id="lead-jumbotron" class="jumbotron jumbotron-fluid bg-dark text-light shadow p-0 mb-0">
+      <div id="attention" class="p-5 text-center align-middle">
+        <div class="text-center justify-content-center align-self-center">
+          <h1 style="font-family: Poppins, sans-serif;">QuizQuest</h1>
+
+          <p class="lead">A location based quiz game</p>
+          <a class="btn btn-lg btn-primary m-1" href="/map" role="button">Play</a>
+
+          <% if (locals.user !== undefined) { %>
+            <a class="btn btn-lg btn btn-outline-primary m-1" href="/quiz" role="button">Browse</a>
+            <% } else { %>
+              <a class="btn btn-lg btn btn-outline-primary m-1" href="/sign_up" role="button">Sign up</a>
+              <% } %>
+        </div>
+      </div>
+    </div>
+
+    <%- include("../components/footer.ejs"); %>
+
+</body>
+
+</html>
