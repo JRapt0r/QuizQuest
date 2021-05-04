@@ -55,3 +55,7 @@ https://www.flaticon.com/free-icon/compass_2439677?term=compass&page=1&position=
 
 **Background SVGs**:
 https://www.svgbackgrounds.com
+
+## License
+
+GPLv3
